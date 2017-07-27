@@ -4,25 +4,31 @@
     <meta charset="utf-8">
     <title>Bus Mall Order Form</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <h1><a href="cart.html">cart</a></h1>
     <form>
-      <dropdown></dropdown>
-      <input type="number" value="quantity"/>
+      Item: <!-- put a dropdown menu here for each item. use select and option-->
+      <select>
+        <option value=""></option>
+      </select>
+      Quantity: <input id="quantity_input" type="number" />
 
       <input id="name_input" type="text" value="name" />
-      <input type="text" value="street"/>
-      <input type="text" value="city"/>
-      <input type="text" value="state"/>
-      <input type="text" value="ZIP code"/>
-      <input type="text" value="Phone Number"/>
+      <input id="street_input" type="text" value="street"/>
+      <input id="city_input" type="text" value="city"/>
+      <input id="state_input" type="text" value="state" />
+      <input id="zip_input" type="text" value="ZIP code" />
+      <input id="phone_input" type="text" value="Phone Number" />
 
-      <input type="number" text="credit card num"/>
+      <input id="credit_input" type="number" text="credit card num" />
 
-      <button id="submit">Add To Cart</button>
       <!-- on press clear input fields -->
+      <button id="submit">Add To Cart</button>
     </form>
-    <script src="app.js" type="text/javascript"></script>
+
+    <script src="data.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
