@@ -39,7 +39,7 @@ function load() {
 
     // display item and quantity
     var order = document.createElement('li');
-    order.textContent = item[i] + quantity[i];
+    order.textContent = 'Item: ' + item[i] + '.   Quantity: ' + quantity[i];
     cartItems = document.getElementById('cart_items');
     cartItems.appendChild(order);
     var image = document.createElement('img');

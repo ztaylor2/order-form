@@ -45,4 +45,12 @@ function eventHandler(e) {
   localStorage.zip = JSON.stringify(zip.value);
   localStorage.phone = JSON.stringify(phone.value);
   localStorage.credit = JSON.stringify(credit.value);
+
+  personName.value = '';
+  street.value = '';
+  city.value = '';
+  state.value = '';
+  zip.value = '';
+  phone.value = '';
+  credit.value = '';
 }
