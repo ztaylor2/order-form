@@ -1,9 +1,11 @@
 body {
   background: linear-gradient(45deg, #D8AEEB, #D9E3FF);
+  margin: 40px;
 }
 
 h1{
   color: #F9EB61;
+  text-align: center;
   font-family: sans-serif cursive;
   font-style: italic;
   font-size: 50px;
@@ -49,17 +51,26 @@ button{
   border: groove .5em, #D7B9C2 ;
   border-radius: 2em;
   color: blue;
+  float: right;
 }
 
 input {
   display: inline-block;
   float: right;
 }
-/*h2 {
-  float: left;
-}*/
+h3 {
+  float: right;
+}
 
 img {
   width: 150px;
 
+}
+
+ul {
+  list-style-type: none;
+}
+
+#cart_items li {
+  padding: 30px;
 }
