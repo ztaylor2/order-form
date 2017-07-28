@@ -1,6 +1,5 @@
 'use strict';
-<<<<<<< HEAD
-=======
+
 //Create a list of items as purchased
 function Store(name){
   this.name = name;
@@ -26,7 +25,7 @@ function eventHandler(e){
 
 if (e.addItem) e.addItem()
 var itemsPurchased = document.getElementById('cartItems').allNames;
->>>>>>> 845b49a5ab64b806824d253de77356f4a1c4a39d
+
 
 // collect personal info
 var personalInfo = [];
