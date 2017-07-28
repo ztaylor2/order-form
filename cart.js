@@ -50,6 +50,7 @@ function load() {
     var deleteButton = document.createElement('button');
     deleteButton.id = i;
     deleteButton.className = 'delete';
+    deleteButton.innerHTML = 'Delete';
     order.appendChild(deleteButton);
 
     deleteButton.addEventListener('click', eventHandler);
