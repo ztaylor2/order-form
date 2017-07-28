@@ -7,28 +7,42 @@
 
   </head>
   <body>
-    <h1><a href="cart.html">cart</a></h1>
+    <h1>Home</h1>
+
+    <h2><a href="cart.html">cart</a></h2>
     <form>
-      Item: <!-- put a dropdown menu here for each item. use select and option-->
-      <select name="Item list"/>
-        <option value="blank">Item</option>
-        <option value="bag">R2D2 Bag</option>
-        <option value="banana">Banana slicer</option>
-        <option value=></option>
-        <option value=></option>
-        <option value=></option>
-        <option value=></option>
-      </select>
-      Quantity: <input id="quantity_input" type="number" />
+      <section id="order_info">
+        <h4>Select Item to Add to Cart:</h4>
+        Item: <select id="select"></select>
+        <br />
+        Quantity: <input id="quantity" type="number" value="1"/>
+        <br />
+      </section>
 
-      <input id="name_input" type="text" value="name" />
-      <input id="street_input" type="text" value="street"/>
-      <input id="city_input" type="text" value="city"/>
-      <input id="state_input" type="text" value="state" />
-      <input id="zip_input" type="text" value="ZIP code" />
-      <input id="phone_input" type="text" value="Phone Number" />
-
-      <input id="credit_input" type="number" text="credit card num" />
+      <section class="personal_info">
+        <h4>Input Personal Info Here: </h4>
+        Name:
+        <input id="personName_input" type="text" value="name" />
+        <br />
+        Street:
+        <input id="street_input" type="text" value="street"/>
+        <br />
+        City:
+        <input id="city_input" type="text" value="city"/>
+        <br />
+        State:
+        <input id="state_input" type="text" value="state" />
+        <br />
+        Zip Code:
+        <input id="zip_input" type="text" value="ZIP code" />
+        <br />
+        Phone Number:
+        <input id="phone_input" type="text" value="Phone Number" />
+        <br />
+        Credit Card Number:
+        <input id="credit_input" type="text" value="XXXX-XXXX-XXXX-XXXX" />
+        <br />
+      </section>
 
       <!-- on press clear input fields -->
       <button id="submit">Add To Cart</button>
