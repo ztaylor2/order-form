@@ -36,6 +36,7 @@ for(var i = 0; i < personalInfo.length; i++) {
   ulEl.appendChild(liEl);
 }
 
+// add an item 
 var order = document.createElement('li');
 order.textContent = item + quantity;
 var cartItems = document.getElementById('cart_items');
@@ -43,5 +44,3 @@ cartItems.appendChild(order);
 var image = document.createElement('img');
 image.src = 'img/' + item + '.jpg';
 order.appendChild(image);
-
-// order.appendChild(<img src = "image.all[i].source">);
