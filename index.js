@@ -1,5 +1,8 @@
 'use strict';
 
+var itemsInCart = [];
+var quantityOfItemsInCart = [];
+
 var select = document.getElementById('select');
 var quantity = document.getElementById('quantity');
 
@@ -26,10 +29,13 @@ button.addEventListener('click', eventHandler);
 
 // handle submit func
 function eventHandler(e) {
+  // stop default funciton
+  e.preventDefault();
   // store order info
-  localStorage.item = JSON.stringify(select.value);
-  localStorage.quantity = JSON.stringify(quantity.value);
-
+  itemsInCart.push(select.value);
+  quantityOfItemsInCart.push(quantity.value);
+  localStorage.item = JSON.stringify(itemsInCart);
+  localStorage.quantity = JSON.stringify(quantityOfItemsInCart);
 
   // store personal data
   localStorage.personName = JSON.stringify(personName.value);
@@ -39,4 +45,12 @@ function eventHandler(e) {
   localStorage.zip = JSON.stringify(zip.value);
   localStorage.phone = JSON.stringify(phone.value);
   localStorage.credit = JSON.stringify(credit.value);
+
+  personName.value = '';
+  street.value = '';
+  city.value = '';
+  state.value = '';
+  zip.value = '';
+  phone.value = '';
+  credit.value = '';
 }
