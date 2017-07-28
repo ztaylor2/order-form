@@ -15,12 +15,12 @@ this.render = function() {
 
 //create button to delete items from form
 
+var deleteButton = document.getElementById('deleteButton');
+deleteButton.addEventListner(click, "eventHandler");
 
 function eventHandler(e){
   var order = document.getElementById('cartItems')
 
-var deleteButton = document.getElementById('deleteButton');
-deleteButton.addEventListner(click, "eventHandler");
 
 if (e.addItem) e.addItem()
 var itemsPurchased = document.getElementById('cartItems').allNames;
