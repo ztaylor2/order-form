@@ -1,30 +1,23 @@
 'use strict';
 
-//Create a list of items as purchased
-function Store(name){
-  this.name = name;
-  this.itemsPurchased = itemsPurchased;
-  this.cartItems = document.getElementById('orderCartList');
-}
+// //Create a list of items as purchased
+// function Store(name){
+//   this.name = name;
+//   this.itemsPurchased = itemsPurchased;
+//   this.cartItems = document.getElementById('orderCartList');
+// }
+//
+// this.render = function() {
+//   this.itemsPurchased();
+// }
+//
+//
+//
+//
+// //create button to delete items from form
+//
+//
 
-this.render = function() {
-  this.itemsPurchased();
-}
-
-
-
-
-//create button to delete items from form
-
-var deleteButton = document.getElementById('deleteButton');
-deleteButton.addEventListner(click, "eventHandler");
-
-function eventHandler(e){
-  var order = document.getElementById('cartItems')
-
-
-if (e.addItem) e.addItem()
-var itemsPurchased = document.getElementById('cartItems').allNames;
 
 
 // collect personal info
@@ -71,3 +64,11 @@ cartItems.appendChild(order);
 var image = document.createElement('img');
 image.src = 'img/' + item + '.jpg';
 order.appendChild(image);
+var deleteButton = document.createElement('button');
+order.appendChild(deleteButton);
+
+function eventHandler(e){
+  cartItems.innerHTML = '';
+};
+
+deleteButton.addEventListener('click', eventHandler);
