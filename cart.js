@@ -65,21 +65,3 @@ function eventHandler(e){
   cartItems.innerHTML = '';
   load();
 };
-
-// function eventHandler(e){
-//   console.log('event');
-//   for(var i = 0; i < item.length; i++) {
-//     if(e.target.id === i) {
-//       item.splice(i, 1);
-//       quantity.splice(i, 1);
-//       cartItems.innerHTML = '';
-//       load();
-//       console.log('splice');
-//     }
-//   }
-// };
-
-
-// var asdf = document.getElementsByClassName('delete');
-// console.log(asdf);
-// asdf.addEventListener('click', eventHandler);
